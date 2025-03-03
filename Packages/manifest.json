@@ -8,7 +8,9 @@
         "com.google.play.common": "file:com.google.play.common-1.9.1.tgz",
         "com.google.firebase.analytics": "file:com.google.firebase.analytics-12.3.0.tgz",
         "com.google.firebase.app": "file:com.google.firebase.app-12.3.0.tgz",
-
+        "com.srdebugger": "file:com.srdebugger-1.12.1.tgz",
+        "com.packages.internals-exposed": "file:com.packages.internals-exposed-1.0.0.tgz",
+        "com.google.firebase.remote-config": "file:com.google.firebase.remote-config-12.5.0.tgz",
         "com.unity.addressables": "1.22.2",
         "com.unity.ai.navigation": "1.1.5",
         "com.unity.collab-proxy": "2.7.1",
@@ -48,13 +50,15 @@
         "com.unity.modules.video": "1.0.0",
         "com.unity.modules.vr": "1.0.0",
         "com.unity.modules.wind": "1.0.0",
-        "com.unity.modules.xr": "1.0.0"
+        "com.unity.modules.xr": "1.0.0",
+        "com.google.ads.mobile": "9.6.0"
     },
   "scopedRegistries": [
     {
       "name": "package.openupm.com",
       "url": "https://package.openupm.com",
       "scopes": [
+        "com.google.ads.mobile",
         "com.google.external-dependency-manager",
         "jp.co.cyberagent.smartaddresser"
       ]
