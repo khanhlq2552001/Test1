@@ -10,7 +10,7 @@
         "com.google.firebase.app": "file:com.google.firebase.app-12.3.0.tgz",
         "com.srdebugger": "file:com.srdebugger-1.12.1.tgz",
         "com.packages.internals-exposed": "file:com.packages.internals-exposed-1.0.0.tgz",
-        "com.google.firebase.remote-config": "file:com.google.firebase.remote-config-12.5.0.tgz",
+        "com.google.firebase.remote-config": "file:com.google.firebase.remote-config-12.3.0.tgz",
         "com.unity.addressables": "1.22.2",
         "com.unity.ai.navigation": "1.1.5",
         "com.unity.collab-proxy": "2.7.1",

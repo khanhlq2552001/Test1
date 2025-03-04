@@ -1,0 +1,17 @@
+{
+    "name": "Game.MainGame.UI",
+    "rootNamespace": "Game.MainGame.UI",
+    "references": [
+        "StompyRobot.SRDebugger",
+        "StompyRobot.SRF"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,48 +1,42 @@
 using UnityEngine;
-using SRF;
-using SRDebugger.Services;
+using System.ComponentModel;
+using SRDebugger;
 
-public class GameDebugger : MonoBehaviour
+public partial class SROptions
 {
-  public int userLevel = 1;
-    public int totalLevels = 10;
-    private bool[] levelsCompleted;
+    // Default Value for property
+    private int levelUser = 0;
 
-    void Start()
+    // Options will be grouped by category
+    [Category("LevelUser")]
+    public int LevelUser
     {
-        // Khởi tạo mảng để theo dõi các màn chơi đã hoàn thành
-        levelsCompleted = new bool[totalLevels];
-
-        // Thêm các tùy chọn vào bảng Debug của SRDebugger
-        SRDebug.Instance.AddOptionContainer(this);
-    }
-
-
-    public void IncreaseUserLevel()
-    {
-        userLevel++;
-        Debug.Log("User Level Increased: " + userLevel);
-    }
-
-    public void DecreaseUserLevel()
-    {
-        if (userLevel > 1)
+        get
         {
-            userLevel--;
-            Debug.Log("User Level Decreased: " + userLevel);
+            return levelUser;
+        }
+        set
+        {
+            levelUser = value;
+            Debug.Log("LevelUser: " + levelUser);
         }
     }
 
-    public void CompleteLevel(int level)
+    private int LevelGame = 0;
+
+    [Category("Level Game")] // Options will be grouped by category
+    public void NextLevel()
     {
-        if (level < 1 || level > totalLevels)
+        if(LevelGame < 10)
         {
-            Debug.LogWarning("Invalid level number!");
-            return;
+            LevelGame++;
+            Debug.Log("LevelGame: "+ LevelGame);
         }
-
-        levelsCompleted[level - 1] = true;
-        Debug.Log("Level " + level + " completed!");
+        else
+        {
+            Debug.Log("Max Level");
+        }
     }
-
 }
+
+
